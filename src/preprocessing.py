@@ -6,6 +6,6 @@ def prepare_features(df):
 
     features = df[["runs", "balls", "strike_rate"]]
 
-    target = df["runs"]
+    target = df["final_runs"]
 
     return features, target

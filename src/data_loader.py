@@ -1,8 +1,9 @@
 import pandas as pd
+import os
 
 # File paths
-MATCHES_PATH = "data/raw/matches.csv"
-DELIVERIES_PATH = "data/raw/deliveries.csv"
+MATCHES_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "raw", "matches.csv")
+DELIVERIES_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "raw", "deliveries.csv")
 
 
 def load_datasets():
